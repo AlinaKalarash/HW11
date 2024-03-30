@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,6 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="HW10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +112,6 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="HW10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711815245248</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final">
+      <option name="closed" value="true" />
+      <created>1711815320796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711815320796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

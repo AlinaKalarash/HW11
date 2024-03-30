@@ -37,10 +37,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-
-# Ignore all files and directories except src/ directory
-*
-!.src/
-
-# Include build.gradle file
-!build.gradle
+/.idea/
+/catalina/
