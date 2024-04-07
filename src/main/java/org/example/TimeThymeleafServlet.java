@@ -2,6 +2,7 @@ package org.example;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -14,9 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 @WebServlet("/timezone")
 public class TimeThymeleafServlet extends HttpServlet {
@@ -50,7 +49,7 @@ public class TimeThymeleafServlet extends HttpServlet {
 //            params.put(keyValue.getKey(), keyValue.getValue()[0]);
 //        }
 
-        params.put("Your timezone: ", timezone(request));
+        params.put("Your timezone: ", timezone(request, response));
 
         Context context = new Context(
                 request.getLocale(),
@@ -61,16 +60,41 @@ public class TimeThymeleafServlet extends HttpServlet {
         response.getWriter().close();
     }
 
-    private String timezone(HttpServletRequest request) {
+    private String timezone(HttpServletRequest request, HttpServletResponse response) {
         String timezone = request.getParameter("timezone");
         OffsetDateTime now;
         if (timezone == null || timezone.length() == 3) {
+            if(getCookies(request) != null) {
+                return getCookies(request);
+            }
             now = OffsetDateTime.now(ZoneOffset.ofHours(0));
+
         } else {
             int time = Integer.parseInt(timezone.replace("UTC", "").replace(" ", ""));
             now = OffsetDateTime.now(ZoneOffset.ofHours(time));
+            response.addCookie(new Cookie("lastTimezone", now.toString()));
         }
         return now.toString();
     }
+
+    private String getCookies(HttpServletRequest req) {
+        String cookies = req.getHeader("Cookie");
+
+        if (cookies == null) {
+            return null;
+        }
+
+        Map<String, String> result = new HashMap<>();
+
+        String[] separateCookies = cookies.split(";");
+        for (String pair : separateCookies) {
+            String[] keyValue = pair.split("=");
+
+            result.put(keyValue[0], keyValue[1]);
+        }
+
+        return result.get("lastTimezone");
+    }
+
 
 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="final">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TimeThymeleafServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="now it works">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TimeThymeleafServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TimeThymeleafServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Probny.executor&quot;: &quot;Run&quot;,
-    &quot;Application.probnyu.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HW10 [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.Tomcat.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Основа, фундамент тг-бота&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Probny.executor": "Run",
+    "Application.probnyu.executor": "Run",
+    "Maven.HW10 [clean,package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Smart Tomcat.Tomcat.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Основа, фундамент тг-бота",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Lessons\Java-lessons\java lessons\HW10\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="TestNG">
       <shortenClasspath name="NONE" />
@@ -204,13 +207,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711815636987</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="doesn't work">
+      <option name="closed" value="true" />
+      <created>1712491931212</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712491931212</updated>
+    </task>
+    <task id="LOCAL-00010" summary="now it works">
+      <option name="closed" value="true" />
+      <created>1712492478832</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712492478832</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="something to start with" />
     <MESSAGE value="it builds!" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="doesn't work" />
+    <MESSAGE value="now it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="now it works" />
   </component>
 </project>
