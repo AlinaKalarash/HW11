@@ -50,16 +50,7 @@ public class TimeThymeleafServlet extends HttpServlet {
 //            params.put(keyValue.getKey(), keyValue.getValue()[0]);
 //        }
 
-        String timezone = request.getParameter("timezone");
-        OffsetDateTime now;
-        if (timezone == null || timezone.length() == 3) {
-        now = OffsetDateTime.now(ZoneOffset.ofHours(0));
-        } else {
-        int time = Integer.parseInt(timezone.replace("UTC", "").replace(" ", ""));
-        now = OffsetDateTime.now(ZoneOffset.ofHours(time));
-        }
-
-        params.put("Your timezone: ", now.toString());
+        params.put("Your timezone: ", timezone(request));
 
         Context context = new Context(
                 request.getLocale(),
@@ -68,6 +59,18 @@ public class TimeThymeleafServlet extends HttpServlet {
 
         engine.process("index", context, response.getWriter());
         response.getWriter().close();
+    }
+
+    private String timezone(HttpServletRequest request) {
+        String timezone = request.getParameter("timezone");
+        OffsetDateTime now;
+        if (timezone == null || timezone.length() == 3) {
+            now = OffsetDateTime.now(ZoneOffset.ofHours(0));
+        } else {
+            int time = Integer.parseInt(timezone.replace("UTC", "").replace(" ", ""));
+            now = OffsetDateTime.now(ZoneOffset.ofHours(time));
+        }
+        return now.toString();
     }
 
 }
