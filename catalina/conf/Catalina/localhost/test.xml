@@ -2,5 +2,11 @@
 <Context docBase="E:\Lessons\Java-lessons\java lessons\HW10\src\webapp">
   <Resources cacheMaxSize="10240">
     <PreResources base="E:/Lessons/Java-lessons/java lessons/HW10/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/thymeleaf-3.1.2.RELEASE.jar"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/ognl-3.3.4.jar"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/javassist-3.29.0-GA.jar"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/attoparser-2.0.7.RELEASE.jar"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar"/>
+    <PostResources base="C:/Users/Аліна/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/slf4j-api-2.0.7.jar"/>
   </Resources>
 </Context>

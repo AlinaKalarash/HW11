@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="final" />
+    <list default="true" id="fafcda1c-2885-442c-8fd8-6ceb3f4ed7fa" name="Changes" comment="final">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TimeThymeleafServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +51,7 @@
     &quot;Smart Tomcat.Tomcat.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/tomcat&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Основа, фундамент тг-бота&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
@@ -90,6 +94,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
+      <module name="HW10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,6 +117,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
+      <module name="HW10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +127,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
       </set>
     </attachedChunks>
   </component>
@@ -189,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711815320796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final">
+      <option name="closed" value="true" />
+      <created>1711815636987</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711815636987</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
