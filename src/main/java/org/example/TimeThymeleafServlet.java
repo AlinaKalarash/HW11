@@ -42,12 +42,7 @@ public class TimeThymeleafServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
-//        Map<String, String[]> parameterMap = request.getParameterMap();
-
         Map<String, String> params = new LinkedHashMap<>();
-//        for (Map.Entry<String, String[]> keyValue : parameterMap.entrySet()) {
-//            params.put(keyValue.getKey(), keyValue.getValue()[0]);
-//        }
 
         params.put("Your timezone: ", timezone(request, response));
 
